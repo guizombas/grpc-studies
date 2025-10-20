@@ -1,0 +1,25 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "grpc": "proto-loader-gen-types --longs=String --enums=String --defaults --oneofs --grpcLib=@grpc/grpc-js --includeDirs=../proto --outDir=src/grpc/proto_gen ../proto/**/*.proto"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@grpc/proto-loader": "^0.8.0",
+    "@types/express": "^5.0.3",
+    "dotenv": "^17.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.14.0",
+    "express": "^5.1.0"
+  }
+}
