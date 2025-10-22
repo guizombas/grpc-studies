@@ -3,8 +3,10 @@
 
 export interface HelloReply {
   'message'?: (string);
+  'code'?: (number);
 }
 
 export interface HelloReply__Output {
   'message': (string);
+  'code': (number);
 }

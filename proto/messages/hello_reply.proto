@@ -4,4 +4,5 @@ option java_package = "com.grpc.demo.proto_gen";
 
 message HelloReply {
   string message = 1;
+  int32 code = 2;
 }
