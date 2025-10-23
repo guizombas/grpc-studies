@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/index.ts",
-    "gen:proto": "ts-node src/grpc/generator.ts",
-    "grpc": "proto-loader-gen-types --longs=String --enums=String --defaults --oneofs --grpcLib=@grpc/grpc-js --includeDirs=../proto --outDir=src/grpc/proto_gen ../proto/**/*.proto"
+    "gen:proto": "ts-node src/grpc/generator.ts"
   },
   "keywords": [],
   "author": "",
